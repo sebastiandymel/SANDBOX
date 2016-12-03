@@ -1,0 +1,14 @@
+﻿<ViewModel:MainPageViewModel xmlns:ViewModel="clr-namespace:PhoneFramework.ViewModel">
+    <ViewModel:MainPageViewModel.Items>
+        <ViewModel:PageItem Name="Cras curabitur maecenas" Location="Nam aenean" />
+        <ViewModel:PageItem Name="Aliquam vestibulum phasellus praesent consequat" Location="Mauris duis" />
+        <ViewModel:PageItem Name="Nullam adipiscing dignissim" Location="Class convallis curae nunc" />
+        <ViewModel:PageItem Name="Elementum parturient integer accumsan" Location="Sed donec" />
+        <ViewModel:PageItem Name="Ante arcu facilisis lorem est" Location="Dis bibendum etiam amet fusce" />
+        <ViewModel:PageItem Name="Congue dictumst fermentum eleifend cursus" Location="Hac quisque aptent auctor" />
+        <ViewModel:PageItem Name="Leo vestibulum mus morbi lectus" Location="Facilisi vestibulum dictum" />
+        <ViewModel:PageItem Name="Nulla libero" Location="Fringilla habitasse diam" />
+        <ViewModel:PageItem Name="Hendrerit himenaeos proin faucibus habitant" Location="Vivamus nec aliquam" />
+        <ViewModel:PageItem Name="Inceptos vestibulum" Location="Aliquet adipiscing parturient imperdiet eget" />
+    </ViewModel:MainPageViewModel.Items>
+</ViewModel:MainPageViewModel>

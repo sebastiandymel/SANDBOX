@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIFramework.App", "UIFramework.App.csproj", "{E478D9F6-2920-4552-B495-800E72CD5D63}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ECC8D559-65BB-4DC8-AC33-E46FD91825FF} = {ECC8D559-65BB-4DC8-AC33-E46FD91825FF}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIToolkit", "UIToolkit\UIToolkit.csproj", "{B973093C-DEE3-410C-A51B-B910A992149E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIFramework.Modules", "UIFramework.Modules\UIFramework.Modules.csproj", "{ECC8D559-65BB-4DC8-AC33-E46FD91825FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIStyleLibrary", "..\UIStyleLibrary\UIStyleLibrary.csproj", "{42DECE4D-28B4-424F-813C-7ABB183BA544}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://sedy.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = UIFramework.App.csproj
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = UIToolkit\\UIToolkit.csproj
+		SccProjectName2 = UIToolkit
+		SccLocalPath2 = UIToolkit
+		SccProjectUniqueName3 = UIFramework.Modules\\UIFramework.Modules.csproj
+		SccProjectName3 = UIFramework.Modules
+		SccLocalPath3 = UIFramework.Modules
+		SccProjectUniqueName4 = ..\\UIStyleLibrary\\UIStyleLibrary.csproj
+		SccProjectName4 = ../UIStyleLibrary
+		SccLocalPath4 = ..\\UIStyleLibrary
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E478D9F6-2920-4552-B495-800E72CD5D63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E478D9F6-2920-4552-B495-800E72CD5D63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E478D9F6-2920-4552-B495-800E72CD5D63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E478D9F6-2920-4552-B495-800E72CD5D63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B973093C-DEE3-410C-A51B-B910A992149E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B973093C-DEE3-410C-A51B-B910A992149E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B973093C-DEE3-410C-A51B-B910A992149E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B973093C-DEE3-410C-A51B-B910A992149E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECC8D559-65BB-4DC8-AC33-E46FD91825FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECC8D559-65BB-4DC8-AC33-E46FD91825FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECC8D559-65BB-4DC8-AC33-E46FD91825FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECC8D559-65BB-4DC8-AC33-E46FD91825FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42DECE4D-28B4-424F-813C-7ABB183BA544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42DECE4D-28B4-424F-813C-7ABB183BA544}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42DECE4D-28B4-424F-813C-7ABB183BA544}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42DECE4D-28B4-424F-813C-7ABB183BA544}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,14 @@
+﻿<Flickr:FlickrFeedViewModel xmlns:Flickr="clr-namespace:PhoneFramework.Modules.Flickr">
+    <Flickr:FlickrFeedViewModel.Images>
+        <Flickr:FlickrImage Name="Aliquam aenean" Source="face2.png" />
+        <Flickr:FlickrImage Name="Class mauris nam integer" Source="face2.png" />
+        <Flickr:FlickrImage Name="Curabitur phasellus maecenas" Source="face2.png" />
+        <Flickr:FlickrImage Name="Praesent nullam cras" Source="face2.png" />
+        <Flickr:FlickrImage Name="Vestibulum accumsan aptent" Source="face2.png" />
+        <Flickr:FlickrImage Name="Sed dis" Source="face2.png" />
+        <Flickr:FlickrImage Name="Bibendum quisque est auctor" Source="face2.png" />
+        <Flickr:FlickrImage Name="Consequat dictumst" Source="face2.png" />
+        <Flickr:FlickrImage Name="Convallis congue adipiscing eleifend" Source="face2.png" />
+        <Flickr:FlickrImage Name="Duis hac cursus" Source="face2.png" />
+    </Flickr:FlickrFeedViewModel.Images>
+</Flickr:FlickrFeedViewModel>

@@ -1,0 +1,79 @@
+﻿<phone:PhoneApplicationPage x:Class="SpectrumVisualizer.View.AppSettings"
+                            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                            xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+                            xmlns:phoneUiToolkit="clr-namespace:SEDY.PhoneUIToolkit;assembly=PhoneUIToolkit"
+                            xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+                            FontFamily="{StaticResource PhoneFontFamilyNormal}"
+                            FontSize="{StaticResource PhoneFontSizeNormal}"
+                            Foreground="{StaticResource PhoneForegroundBrush}"
+                            Orientation="Portrait"
+                            SupportedOrientations="Portrait"
+                            shell:SystemTray.IsVisible="True"
+                            mc:Ignorable="d">
+    <phone:PhoneApplicationPage.Resources>
+        <phoneUiToolkit:StringMatchConverter x:Key="stringMatch" />
+        <phoneUiToolkit:ChangeTypeConverter x:Key="changeType" />
+    </phone:PhoneApplicationPage.Resources>
+    <!--  LayoutRoot is the root grid where all page content is placed  -->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!--  TitlePanel contains the name of the application and page title  -->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}" />
+            <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.Settings, Source={StaticResource LocalizedStrings}}" />
+        </StackPanel>
+
+        <!--  ContentPanel - place additional content here  -->
+        <Grid x:Name="ContentPanel"
+              Grid.Row="1"
+              Margin="12,0,12,12">
+            <StackPanel>
+                <!--
+                    ========================================
+                    SPECTRUM SOURCE
+                    ========================================
+                -->
+                <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.SpectrumSource, Source={StaticResource LocalizedStrings}}" />
+                <StackPanel Orientation="Horizontal">
+                    <RadioButton Command="{Binding SetSourceCommand}"
+                                 CommandParameter="Mic"
+                                 Content="{Binding Path=LocalizedResources.Mic,
+                                                   Source={StaticResource LocalizedStrings}}"
+                                 IsChecked="{Binding SelectedSpectrumSource,
+                                                     Converter={StaticResource ResourceKey=stringMatch},
+                                                     ConverterParameter=Mic}" />
+
+                    <RadioButton Command="{Binding SetSourceCommand}"
+                                 CommandParameter="Mock"
+                                 Content="{Binding Path=LocalizedResources.Mock,
+                                                   Source={StaticResource LocalizedStrings}}"
+                                 IsChecked="{Binding SelectedSpectrumSource,
+                                                     Converter={StaticResource ResourceKey=stringMatch},
+                                                     ConverterParameter=Mock}" />
+                </StackPanel>
+                <!--
+                    ========================================
+                    NUMBER OF BANDS
+                    ========================================
+                -->
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding Path=LocalizedResources.NumberOfBands, Source={StaticResource LocalizedStrings}}" />
+                    <TextBlock Style="{StaticResource PhoneTextNormalStyle}" Text="{Binding ElementName=BandSlider, Path=Value, Converter={StaticResource changeType}, ConverterParameter=INT}" />
+                </StackPanel>
+                <Slider x:Name="BandSlider"
+                        Maximum="50"
+                        Minimum="1"
+                        Value="{Binding NumberOfBands,
+                                        Mode=TwoWay}" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>
